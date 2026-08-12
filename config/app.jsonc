@@ -1,0 +1,175 @@
+{
+  "interests": {
+    "profile": {
+      "enabled": true,
+      "summary": "遥感异常检测与在轨计算：利用非监督学习算法进行通用异常检测，包括灾害、环境污染等应用；在轨计算与自主异常发现流程范式。",
+      "topics": [
+        "remote sensing anomaly detection",
+        "satellite on-orbit computing",
+        "unsupervised anomaly detection",
+        "disaster detection",
+        "environmental monitoring",
+        "earth observation",
+        "satellite data processing",
+        "change detection",
+        "outlier detection"
+      ],
+      "methods": [
+        "deep learning",
+        "machine learning",
+        "neural networks",
+        "convolutional neural networks",
+        "autoencoder",
+        "unsupervised learning",
+        "anomaly detection algorithms",
+        "image processing",
+        "computer vision"
+      ],
+      "favoriteJournals": [
+        "Remote Sensing of Environment",
+        "IEEE Transactions on Geoscience and Remote Sensing",
+        "ISPRS Journal of Photogrammetry and Remote Sensing",
+        "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+        "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "International Journal of Computer Vision",
+        "IEEE Transactions on Neural Networks and Learning Systems",
+        "Pattern Recognition"
+      ],
+      "avoidTopics": []
+    }
+  },
+  "feeds": {
+    "includeCatalog": true,
+    "catalogSelections": [],
+    "customRss": [
+      {
+        "name": "IEEE Transactions on Image Processing (TIP)",
+        "rss": "https://ieeexplore.ieee.org/rss/TOC6287.XML"
+      },
+      {
+        "name": "International Journal of Computer Vision (IJCV)",
+        "rss": "https://link.springer.com/search.rss?facet-content-type=Journal&facet-journal-id=11263&channel-name=International%20Journal%20of%20Computer%20Vision"
+      },
+      {
+        "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+        "rss": "https://ieeexplore.ieee.org/rss/TOC34.XML"
+      },
+      {
+        "name": "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
+        "rss": "https://ieeexplore.ieee.org/rss/TOC5165.XML"
+      },
+      {
+        "name": "Pattern Recognition",
+        "rss": "https://rss.sciencedirect.com/publication/science/00313203"
+      },
+      {
+        "name": "CVPR (IEEE/CVF Conference on Computer Vision and Pattern Recognition)",
+        "rss": "https://openaccess.thecvf.com/CVPR2024.rss"
+      },
+      {
+        "name": "ICCV (IEEE/CVF International Conference on Computer Vision)",
+        "rss": "https://openaccess.thecvf.com/ICCV2023.rss"
+      },
+      {
+        "name": "ECCV (European Conference on Computer Vision)",
+        "rss": "https://link.springer.com/search.rss?facet-event-code=ECCV"
+      },
+      {
+        "name": "NeurIPS (Neural Information Processing Systems)",
+        "rss": "https://proceedings.neurips.cc/paper/2023/hash.rss"
+      },
+      {
+        "name": "ICLR (International Conference on Learning Representations)",
+        "rss": "https://openreview.net/rss?id=venues%2CICLR%2F2024%2FConference&omit=&short=&top="
+      },
+      {
+        "name": "ICML (International Conference on Machine Learning)",
+        "rss": "https://proceedings.mlr.press/v202/rss.xml"
+      },
+      {
+        "name": "AAAI Conference on Artificial Intelligence",
+        "rss": "https://ojs.aaai.org/index.php/AAAI/rss"
+      },
+      {
+        "name": "Remote Sensing of Environment",
+        "rss": "https://rss.sciencedirect.com/publication/science/00344257"
+      },
+      {
+        "name": "ISPRS Journal of Photogrammetry and Remote Sensing",
+        "rss": "https://rss.sciencedirect.com/publication/science/09242716"
+      },
+      {
+        "name": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)",
+        "rss": "https://ieeexplore.ieee.org/rss/TOC4609.XML"
+      },
+      {
+        "name": "Remote Sensing (MDPI)",
+        "rss": "https://www.mdpi.com/journal/remotesensing/rss"
+      },
+      {
+        "name": "Advances in Space Research",
+        "rss": "https://rss.sciencedirect.com/publication/science/02731177"
+      },
+      {
+        "name": "Acta Astronautica",
+        "rss": "https://rss.sciencedirect.com/publication/science/00945765"
+      },
+      {
+        "name": "Nature",
+        "rss": "https://www.nature.com/nature.rss"
+      },
+      {
+        "name": "Science",
+        "rss": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
+      },
+      {
+        "name": "Nature Communications",
+        "rss": "https://www.nature.com/ncomms.rss"
+      },
+      {
+        "name": "Scientific Reports",
+        "rss": "https://www.nature.com/srep.rss"
+      },
+      {
+        "name": "Nature Computational Science",
+        "rss": "https://www.nature.com/natcomputsci.rss"
+      },
+      {
+        "name": "Nature Machine Intelligence",
+        "rss": "https://www.nature.com/natmachintell.rss"
+      },
+      {
+        "name": "Nature Geoscience",
+        "rss": "https://www.nature.com/ngeo.rss"
+      }
+    ]
+  },
+  "matching": {
+    "paperLimit": 15,
+    "minScore": 0.30,
+    "clusterSimilarityThreshold": 0.7,
+    "avoidPenaltyWeight": 0.35,
+    "maxPaperAgeDays": 90
+  },
+  "metadataEnrichment": {
+    "enabled": true,
+    "crossref": {
+      "enabled": true,
+      "mailto": "xujm27@mail2.sysu.edu.cn"
+    }
+  },
+  "summary": {
+    "enabled": false
+  },
+  "delivery": {
+    "mode": "smtp",
+    "from": "${oc.env:SENDER}",
+    "to": "${oc.env:RECEIVER}",
+    "smtpHost": "${oc.env:SMTP_SERVER}",
+    "smtpPort": "${oc.env:SMTP_PORT}",
+    "smtpPassword": "${oc.env:SENDER_PASSWORD}"
+  },
+  "dailyRomance": {
+    "enabled": true
+  }
+}
